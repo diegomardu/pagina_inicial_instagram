@@ -62,22 +62,29 @@ body{
 }
 
 .instagram-logo{
-    height: 3rem;
+    height: 3rem;    
+    text-align: center;
 }
 
 .profile-photo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+    display: block ;
     overflow: hidden;
 }
 
 .profile-photo img{
     height: 6rem;
+    border-radius: 50%;
+    transition: height 0.5s linear;
+}
+
+.profile-photo img:hover{
+    height: 10rem;
+    border-radius: 20%;
+    transition: height 0.5s linear;
 }
 
 .instagram-login{
+    display: block;
     background-color: #0095f6;
     color: #ffffff;
     padding: 8px;
@@ -85,6 +92,7 @@ body{
 }
 
 .instagram-logout{
+    display: block;
     color: #0095f6;
     margin-top: 1rem;
 }
